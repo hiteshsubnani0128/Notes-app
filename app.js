@@ -1,15 +1,29 @@
 console.log("Stating App.js");
 
-//const notes = require('./notes');
-//const fs = require('fs');
+const fs = require('fs');
 const _ = require('lodash');
+const yargs = require('yargs');
 
-console.log(_.isString(true));
-console.log(_.isString("Hitesh"));
+const notes = require('./notes').default;
 
-var a =[1,2,3,1,2,3,3,4,5,6];
-console.log(_.uniq(a));
-//var result = notes.add(10,20);
-//console.log('Result: ',result);
+const argv = yargs.argv;
+var command = process.argv[2];
+console.log('Command: ',command);
+console.log('Process: ',process.argv);
+console.log('Yargs: ',argv);
 
-//fs.appendFileSync('greetings.txt', result);
+if(command === 'add'){
+    notes.addNote(argv.title, argv.body);
+}
+else if(command === 'list'){
+    notes.getAll();
+}
+else if(command === 'read'){
+    console.log('Reading note');
+}
+else if(command === 'remove'){
+    console.log('removing note');
+}
+else{
+    console.log('Cmd not found');
+}
