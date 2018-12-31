@@ -37,7 +37,15 @@ var addNote = (title, body) =>{
 };
 
 var getAll = () =>{
-    console.log("Getting all notes")
+    var notes = fetchNotes();
+    if(notes.length===0){
+        console.log('Node not Found');
+    }
+    else{
+    for(let i of notes)
+    console.log('Note Title:',i.title,'Note Body:',i.body);
+    
+    }
 }
 
 var getNote = (title) =>{
