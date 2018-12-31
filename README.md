@@ -1,5 +1,5 @@
 # Notes-app
-<h3>It is a Node Applicaton which is used to save Notes using cmd line</h3>
+<h3 style="color:blue">It is a Node Applicaton which is used to save Notes using cmd line</h3>
 <h2>This Application can perform different tasks like</h2>
 <ul>
   <li>ADD A NEW NOTE</LI>
