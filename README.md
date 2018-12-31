@@ -36,5 +36,5 @@ node app.js remove --title="Note you want to remove"
 5. To Read a Note
 
 ```bash
-node app.js read --title="Title of the Note"
+node app.js Read --title="Title of the Note"
 ```
