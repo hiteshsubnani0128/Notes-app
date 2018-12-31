@@ -20,7 +20,9 @@ else if(command === 'list'){
     notes.getAll();
 }
 else if(command === 'read'){
-    notes.getNote(argv.title);
+    var abc = notes.getNote(argv.title);
+    var message = abc ? '' : 'Note not found'; 
+    console.log(message);
 }
 else if(command === 'remove'){
    var noteRemoved = notes.removeNote(argv.title);
