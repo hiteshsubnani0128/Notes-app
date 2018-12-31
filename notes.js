@@ -1,4 +1,3 @@
-console.log('starting Notes.js')
 const fs = require('fs');
 
 var fetchNotes = () =>{
@@ -42,9 +41,11 @@ var getAll = () =>{
         console.log('Node not Found');
     }
     else{
-    for(let i of notes)
-    console.log('Note Title:',i.title,'Note Body:',i.body);
-    
+    console.log(`Printing ${notes.length} Notes`);
+    for(let i of notes){
+        console.log('--');
+        console.log('Note Title:',i.title,'\n'+'Note Body:',i.body);
+    }
     }
 }
 
