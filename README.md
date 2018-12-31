@@ -11,7 +11,7 @@
 <h4>TO RUN THIS APP MAKE SURE YOU HAVE <U>NODE INSTALLED</U></h4>
 <ul>
 <li>After Downloading the app run <strong>npm install</strong> In your Main file </li>
-<li>To Add a new Note Run command <strong> node app.js add --title="Some Title" --body="Some text here" </strong></li>
-<li>To Add list all Note's Run command <strong> node app.js add list </strong></li>
-<li>To remove a Note Run command <strong> node app.js remove --title="Some Title" </strong> </li>
-<li>To read a particular Note Run command <strong> node app.js read --title="Some Title" </strong></li>
+<li>To Add a new Note; Run command <strong> node app.js add --title="Some Title" --body="Some text here" </strong></li>
+<li>To list all Note's; Run command <strong> node app.js add list </strong></li>
+<li>To remove a Note; Run command <strong> node app.js remove --title="Some Title" </strong> </li>
+<li>To read a particular Note; Run command <strong> node app.js read --title="Some Title" </strong></li>
