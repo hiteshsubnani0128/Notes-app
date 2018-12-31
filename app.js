@@ -14,7 +14,12 @@ var command = argv._[0];
 //  console.log('Yargs: ',argv);
 
 if(command === 'add'){
+    if(argv.title.length!==0){
     notes.addNote(argv.title, argv.body);
+    }
+    else{
+        console.log("Add a Title to your note")
+    }
 }
 else if(command === 'list'){
     notes.getAll();
